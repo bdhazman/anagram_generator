@@ -25,4 +25,4 @@ $ python anagram_generator.py <word>
 ```
 
 ## License
-See [License](github.com/bdhazman/anagram_generator/LICENSE.md) for the license rights and limitations (MIT).
+See [License](LICENSE) for the license rights and limitations (MIT).
