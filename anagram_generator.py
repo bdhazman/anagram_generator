@@ -1,3 +1,4 @@
+import sys
 """
 init_anagram_dictionary() must be run before calling get_anagrms()
 
@@ -36,3 +37,12 @@ def get_anagrams(word):
         return anagram_dictionary[sorted_word]
     else:
         return []
+
+if __name__ == '__main__':
+    init_anagram_dictionary()
+    if len(sys.argv) > 0:
+        print("Anagrams of "+ sys.argv[1] +":")
+        for anagram in get_anagrams(sys.argv[1]):
+            print(anagram)
+    else:
+        print("No word given.")
