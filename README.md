@@ -1,5 +1,5 @@
 # Python Anagram Generator
-An anagram generator written and python that can be executed from the command line or used in projects as needed.
+An anagram generator written in python that can be executed from the command line or used in projects as needed.
 ## How it Works
 To find an anagram of a given word, we first sort the letters of the given word.
 
