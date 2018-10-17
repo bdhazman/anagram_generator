@@ -23,3 +23,6 @@ This allows us to find all anagrams of a given word by simply accessing ```anagr
 ```
 $ python anagram_generator.py <word>
 ```
+
+## License
+See [License](github.com/bdhazman/anagram_generator/LICENSE.md) for the license rights and limitations (MIT).
