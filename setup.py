@@ -1,10 +1,20 @@
 """
-This script, using a dictionary provided by https://github.com/dwyl/english-words,
-sorts the letters of each word in the dictionary,
-and stores this sorted version of the word in a file followed by
-any words that also has this string
-An anagram of any word will have the same string of sorted letters as the given word.
-We
+This script, using a dictionary provided by github.com/dwyl/english-words,
+sorts each word in the dictionary (let's call this the sorted_word of any given
+word).
+
+The script in create_anagram_dictionary(), creates a dictionary that uses
+orted_words as keys with their values being an array of words that shares that
+same sorted_word.
+
+cache_anagram_dictionary() creates a .txt file (data/anagram_dictionary.txt)
+where the dictionary created in create_anagram_dictionary() is stored in the
+format:
+<sorted_word>: <word>,<word2>,...
+
+This script only needed to be run once, to create data/anagram_dictionary.txt.
+After that, the program will use that file to (somewhat) quickly re-create the
+dictionary on each run.
 """
 def create_anagram_dictionary():
     """
