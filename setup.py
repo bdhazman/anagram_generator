@@ -1,3 +1,11 @@
+"""
+This script, using a dictionary provided by https://github.com/dwyl/english-words,
+sorts the letters of each word in the dictionary,
+and stores this sorted version of the word in a file followed by
+any words that also has this string
+An anagram of any word will have the same string of sorted letters as the given word.
+We
+"""
 def create_anagram_dictionary():
     """
     Creates a dictionary of words based on the words in file "data/words_alpha.txt"
