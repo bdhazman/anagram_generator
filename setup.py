@@ -10,7 +10,7 @@ same sorted_word.
 cache_anagram_dictionary() creates a .txt file (data/anagram_dictionary.txt)
 where the dictionary created in create_anagram_dictionary() is stored in the
 format:
-<sorted_word>: <word>,<word2>,...
+<sorted_word>:<word>|<word2>,...
 
 This script only needed to be run once, to create data/anagram_dictionary.txt.
 After that, the program will use that file to (somewhat) quickly re-create the
@@ -43,9 +43,9 @@ def cache_anagram_dictionary():
     """
     anagram_dictionary_file = open("data/anagram_dictionary.txt","w")
     for sorted_word, words in create_anagram_dictionary().items():
-        anagram_dictionary_file.write(sorted_word + ": ")
+        anagram_dictionary_file.write(sorted_word + ":")
         for word in words:
-            anagram_dictionary_file.write(word + ",")
+            anagram_dictionary_file.write(word + "|")
         anagram_dictionary_file.write("\n")
 
 if __name__ == '__main__':
