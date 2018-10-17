@@ -40,7 +40,7 @@ def get_anagrams(word):
 
 if __name__ == '__main__':
     init_anagram_dictionary()
-    if len(sys.argv) > 0:
+    if len(sys.argv) > 1:
         print("Anagrams of "+ sys.argv[1] +":")
         for anagram in get_anagrams(sys.argv[1]):
             print(anagram)
