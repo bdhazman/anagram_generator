@@ -32,7 +32,7 @@ def get_anagrams(word):
         List[str]: a list of anagrams of word
 
     """
-    sorted_word = ''.join(sorted(word))
+    sorted_word = ''.join(sorted(word.lower()))
     if sorted_word in anagram_dictionary:
         return anagram_dictionary[sorted_word]
     else:
